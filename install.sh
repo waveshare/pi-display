@@ -8,7 +8,7 @@ password=$1
 echo $password | sudo -S apt-get update
 echo $password | sudo -S apt install -y python3-pil python3-smbus
 
-# install piard-display
+# install pidisplay
 echo $password | sudo -S python3 setup.py install
 
 # install picard display service
