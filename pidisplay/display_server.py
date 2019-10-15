@@ -45,7 +45,7 @@ class DisplayServer(object):
             p = (value -9)/3.6*100
             if(p > 100):
                 p = 100
-            self.draw.text((4, top), 'PWR: ' + ("%.1fV")%value + ("    %02d%%")%p, font=self.font, fill=255)
+            self.draw.text((4, top), 'PWR: ' + ("%.1fV")%value + ("    %2d%%")%p, font=self.font, fill=255)
             
             # set stats headers
             top = 14
@@ -57,10 +57,10 @@ class DisplayServer(object):
             # set stats fields
             top = 22
                                                             
-            cpu_percent = '%02d%%' % int(round(cpu_usage() * 100.0, 1))
-            ram_percent = '%02d%%' % int(round(memory_usage() * 100.0, 1))
-            disk_percent = '%02d%%' % int(round(disk_usage() * 100.0, 1))
-            temp_percent = '%02d' % int(round(temp(), 1))
+            cpu_percent = '%2d%%' % int(round(cpu_usage() * 100.0, 1))
+            ram_percent = '%2d%%' % int(round(memory_usage() * 100.0, 1))
+            disk_percent = '%2d%%' % int(round(disk_usage() * 100.0, 1))
+            temp_percent = '%2d' % int(round(temp(), 1))
             
             entries = [cpu_percent, ram_percent, disk_percent, temp_percent]
             for i, entry in enumerate(entries):
