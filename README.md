@@ -1,15 +1,15 @@
-# PiCard
+# pi-display
 
-PiCard is a system server to display the Raspberry Pi's IP address (and other stats)
+pi-display is a system server to display the Raspberry Pi's IP address (and other stats)
 
 If you find an issue, please [let us know](../..//issues)!
 
 ## Setup
 
-Follow the steps below to download PiCard directly or create it from scratch.
+Follow the steps below to download pi-display directly or create it from scratch.
 
-On the Raspberry Pi, run the PiCard installation script
+On the Raspberry Pi, run the pi-display installation script
 
-    git clone https://github.com/waveshare/picard
-    cd picard
+    git clone https://github.com/waveshare/pi-display
+    cd pidisplay
     ./install.sh <password>
