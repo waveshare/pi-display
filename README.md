@@ -11,5 +11,5 @@ Follow the steps below to download pi-display directly or create it from scratch
 On the Raspberry Pi, run the pi-display installation script
 
     git clone https://github.com/waveshare/pi-display
-    cd pidisplay
+    cd pi-display
     ./install.sh <password>
